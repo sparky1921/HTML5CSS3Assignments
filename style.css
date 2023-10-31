@@ -1,0 +1,80 @@
+/* PARTH HARESHKUMAR PATEL
+30 OCTOBER 2023
+ASSIGNMENT 6 */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group {
+    margin-bottom: 15px;
+}
+
+header, form {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 12px;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #4a0045;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Mobile View  */
+@media (max-width: 600px) {
+    body {
+        background-color: #e2dbdb;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+    form {
+        width: 600px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 22x;
+        width: 100%;
+    }
+}
+
+/* Tablet and Desktop View  */
+@media (min-width: 601px) {
+    body {
+        background-color: #d2d2d2;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: auto;
+    }
+
+    form, header {
+        margin: auto 10px;
+    }
+}
