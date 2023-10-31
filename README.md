@@ -1,1 +1,1 @@
-In this repository I will submit my HTML5CSS3 Mobile Web Development Assignments.
+In this branch I had submited my HTML5CSS3 Mobile Web Development Assignment 6.
