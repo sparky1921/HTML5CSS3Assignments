@@ -1,0 +1,100 @@
+/* Universal Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 26px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Validation Styles */
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="number"]:invalid,
+input[type="date"]:invalid {
+  border-color: red;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="number"]:valid,
+input[type="date"]:valid {
+  border-color: green;
+}
+
+/* Responsive Form Group */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"] {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #484848;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #22a822;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+form {
+  width: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #c6c6c6;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 601px) {
+  .group {
+      margin-bottom: 15px;
+      display: block;
+  }
+
+}
+
+@media (max-width: 600px) {
+  h1 {
+      padding: 10px;
+      font-size: 24px;
+  }
+
+  input,
+  label {
+      display: block;
+  }
+
+  h2 {
+      padding: 10px;
+      font-size: 20px;
+  }
+}

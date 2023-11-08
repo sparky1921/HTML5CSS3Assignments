@@ -1,0 +1,90 @@
+<!-- PARTH HARESHKUMAR PATEL
+ASSIGNMENT 7
+MOBILE WEB DEVELOPMENT -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>PARTH PATEL</h1>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div id="part-1" class="swiper-slide">
+                <form action="#" method="post" id="mySchool">
+                    <h2>School Information</h2>
+                    <div class="group">
+                        <label for="schoolname">Name of School:</label>
+                        <input type="text" name="schoolname" id="schoolname" placeholder="Enter your school name here"
+                            required>
+                    </div>
+                    <div class="group">
+                        <label for="joiningdate">Date of Joining:</label>
+                        <input type="date" name="joiningdate" id="joiningdate" required>
+                    </div>
+                    <div class="group">
+                        <label for="graduated">Graduated?</label>
+                        <label for="graduated">Yes:</label>
+                        <input type="radio" id="graduated" name="graduated" value="yes" required>
+                        <label for="graduated">No:</label>
+                        <input type="radio" id="graduated" name="graduated" value="no" required>
+                    </div>
+                </form>
+            </div>
+            <div id="part-2" class="swiper-slide">
+                <form action="#" method="post" id="myInfo">
+                    <h2>Personal Information</h2>
+                    <div class="group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="john0123@xyz.com" required>
+                    </div>
+                    <div class="group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" required oninvalid="this.setCustomValidity('Please enter a valid US phone number (e.g., 1234567890)')"oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="group">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" name="zip" id="zip" required oninvalid="this.setCustomValidity('Please enter a valid Canadian zip code (e.g., A1A 1A1)')"oninput="this.setCustomValidity('')">
+                    </div>
+                </form>
+            </div>
+            <div id="part-3" class="swiper-slide">
+                <form action="#" method="post" id="myPayment">
+                    <h2>Payment Information</h2>
+                    <div class="group">
+                        <label for="ccNumber">Credit Card Number:</label>
+                        <input type="number" name="ccNumber" id="ccNumber" required>
+                    </div>
+                    <div class="group">
+                        <label for="expirationDate">Expiration Date:</label>
+                        <input type="date" id="expirationDate" name="expirationDate" required>
+                    </div>
+                    <div class="group">
+                        <label for="cvv">CVV:</label>
+                        <input type="number" name="cvv" id="cvv" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
