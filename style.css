@@ -1,0 +1,16 @@
+/* Different bg-col for different screen sizes */
+@media (max-width: 576px) {
+    .bg-small-screen {
+        background-color: #ffa4ac;
+    }
+}
+@media (min-width: 577px) {
+    .bg-medium-screen {
+        background-color: #acffc0;
+    }
+}
+@media (min-width: 1000px) {
+    .bg-large-screen {
+        background-color: #aef3ff;
+    }
+}
