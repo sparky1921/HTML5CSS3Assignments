@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Store Inventory</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Name -->
+            <h1>PARTH PATEL</h1>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Time Machine</td>
+                                <td>$1599.99</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Abra Ka Dabra</td>
+                                <td>$1769.99</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Harry Poter Magical Stick</td>
+                                <td>$1200.99</td>
+                                <td>20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Form -->
+                <div class="col-md-6 order-md-2">
+                    <form>
+                        <div class="form-group">
+                            <label for="productCat">Product Category</label>
+                            <select class="form-control" id="productCat">
+                                <option>Time Machine</option>
+                                <option>Abra Ka Dabra</option>
+                                <option>Magical Stick - Harry Poter</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="orderCheck">
+                                <label class="form-check-label" for="orderCheck">Would you like to order?</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="range" class="form-control-range" id="quantity" min="1" max="5">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Buy</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Image -->
+                <div class="col-md-6 order-md-1">
+                    <img src="Time Machine.jpg" class="img-fluid" alt="Iphone 15 Pro Max">
+                    <figcaption class="figure-caption">Time Machine is now launched!</figcaption>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
